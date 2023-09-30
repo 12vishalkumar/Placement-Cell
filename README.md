@@ -84,7 +84,7 @@
 # Screenshots of the pages
 
 ## Sign In Form
-  ![SignIn-Page](./assets/images/signin.png)
+  ![SignIn-Page](./assets/images/signIn.png)
   
 ## Sign Up Form
   ![SignUp-Page](./assets/images/signup.png)
