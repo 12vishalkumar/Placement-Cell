@@ -1,0 +1,29 @@
+.nav{
+    background-color: #790ab1;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    justify-content: left;
+}
+
+.img {
+    height: 100%;
+    width: 30%;
+}
+
+.logo-image{
+    height: 4.5rem;
+    width: 5rem;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+.signOut{
+    background-color: rgb(17, 102, 230); 
+    border-radius: 6px;
+}
+
+.signOut:hover{
+    background-color: red;
+}

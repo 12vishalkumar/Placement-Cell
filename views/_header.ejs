@@ -1,0 +1,27 @@
+<!-------------------------- header Page --------------------------->
+<!DOCTYPE html>
+<html lang="en">
+	<!------------------------------ head tag -------------------------------->
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"  href="/css/header.css"/>
+	</head>
+<header>
+	<% if (locals.user) { %>
+	<nav class="navbar navbar-dark nav">
+		<div class="container-fluid">
+			<div class="navBar">
+				<img class="logo-image"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WmVSGGJ8N9DiPpt0iAHn6m3q3i5DnFncMeheF0WS3X4w7_oBQJi-lHkHogFRcpxIm90&usqp=CAU" alt="logo"/>
+			</div>
+			<a class="navbar-brand" href="/">Placement Cell</a>
+			<a class="navbar-brand" href="/">Welcome <%=locals.user.name%></a>
+			<form class="d-flex px-4">
+				<a class="navbar-brand p-2" href="/company/home">Company List</a>
+				<a class="navbar-brand p-2" href="/users/download-csv">Download Report</a>
+				<a class="navbar-brand p-2 signOut" href="/users/signout">Sign out</a>
+			</form>
+		</div>
+	</nav>
+	<% } %>
+</header>

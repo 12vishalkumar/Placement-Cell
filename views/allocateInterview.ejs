@@ -1,0 +1,44 @@
+<!--------------------------------------- Interview Page ----------------------------->
+<!DOCTYPE html>
+<html lang="en">
+  <!-------------------- head tag ----------------------------->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%- include('../assets/css/bootstrap_css') %>
+    <link rel="stylesheet" href="/css/interview.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ5s9mA2eqha2aalNvvqPRuJ2ikdJyvpBsjepxCrCqIfFsAaHtC1dI7Tb9pvQrm1DtiBA&usqp=CAU" type="image/x-icon">
+    <title>Schedule Interview</title>
+  </head>
+  <!---------------------- body ------------------------------>
+  <body style="background-color: #e3e3e7;">
+    <%- include('_header') %>
+    <div class="container">
+      <form class="w-60 mx-auto mt-4" action="/company/schedule-interview" method="post" style="height: 60vh; display: grid; place-content: center; width: 530px; background: rgb(248, 124, 238); border-radius: 5px; box-shadow: 1px 1px 3px 6px rgba(143, 141, 141, 0.4);">
+        <h3 style="margin-bottom: 50px; color: black;">Schedule Interview</h3>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <select class="form-select" aria-label="Default select example" name="id" id="name">
+            <option selected disabled>Select Student</option>
+            <% for (let student of students){ %>
+              <option value="<%= student.id %>">
+                <%= student.name %>
+              </option>
+            <% } %>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="company" class="form-label">Company</label>
+          <input type="text" class="form-control" id="company" name="company" placeholder="Enter Company Name"/>
+        </div>
+        <div class="mb-3">
+          <label for="date" class="form-label">Date</label>
+          <input type="date" class="form-control" id="date" name="date" />
+        </div>
+        <button class="btn btn-success align-self-center">Schedule Interview</button>
+      </form>
+    </div>
+    <%- include('../assets/js/bootstrap_javascript') %>
+  </body>
+</html>

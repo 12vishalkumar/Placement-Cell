@@ -1,0 +1,146 @@
+body{
+    background-color: #dde2e2; 
+    margin: 0;
+    padding: 0; 
+}
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #790ab1;
+    color: #fff;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    margin-top: -100px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    justify-content: left;
+    height: 100%;
+    width: 75%;
+}
+
+.img {
+    height: 100%;
+    width: 30%;
+}
+
+.logo-image{
+    height: 4.5rem;
+    width: 5rem;
+    margin-top: 5px;
+    border-radius: 20px;
+    margin-left: 1rem;
+}
+
+.heading{
+    color: #fffbfb;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-left: 1.5rem;
+}
+
+.signUp-btn{
+    text-align: right;
+    margin-right: 1.4rem;
+}
+
+.btn {
+    padding: 12px 17px;
+    color: white;
+    background-color: rgb(64, 112, 244);
+    border: none;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    font-weight: 650;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: green;
+}
+
+.containers{
+    height: 420px;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 6px rgba(143, 141, 141, 0.4);
+    background-color: #c441ec;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.container{
+    height: 100%;
+    width: 80%;
+}
+
+.sign{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: -20px;
+}
+
+.fields{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #222121;
+    box-sizing: border-box;
+}
+  
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+.inputFieldi {
+    width: 70%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #1f1d1d;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: 0px 0px 2px 1px lightgray;
+}
+
+.inputFieldi:hover {
+    opacity: 0.8;
+}
+
+#btn{
+    margin-left: 25%;
+}
+
+.reg{
+    text-align: center;
+    margin-top: 1.6rem;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.psw a:hover{
+    color: #024e08;
+}

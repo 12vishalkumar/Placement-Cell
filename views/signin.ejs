@@ -1,0 +1,49 @@
+<!--------------------------------------------- Sign In Page ------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+	<!------------------------------ head tag -------------------------------->
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"  href="/css/signin.css"/>
+		<title>Sign In</title>
+		<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ5s9mA2eqha2aalNvvqPRuJ2ikdJyvpBsjepxCrCqIfFsAaHtC1dI7Tb9pvQrm1DtiBA&usqp=CAU" type="image/x-icon">
+	</head>
+	<!--------------------------------- body --------------------------------->
+	<body>
+		<!----------------------- nav bar ------------------------>
+		<nav>
+			<div class="navBar">
+				<div>
+				    <img class="logo-image"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WmVSGGJ8N9DiPpt0iAHn6m3q3i5DnFncMeheF0WS3X4w7_oBQJi-lHkHogFRcpxIm90&usqp=CAU" alt="logo"/>
+				</div>
+				<div class="heading">
+				    <h1>Placement Cell</h1>
+				</div>
+			</div>
+			<div class="signUp-btn">
+				<a class="btn" href="/users/signup">SignUp</a>
+			</div>
+		</nav>
+		<div class="containers">
+			<div class="container">
+				<form action="/users/create-session" method="POST">
+					<div class="sign">
+						<h1>Sign In</h1>
+					</div>
+					<div>
+						<label for="uname" class="fields"><b>Email</b></label>
+						<input type="email" name="email" class="inputFieldi" placeholder="Enter Your Email" required>
+						<label for="psw" class="fields"><b>Password</b></label>
+						<input type="password" name="password" class="inputFieldi" placeholder="Enter Your Password" required>
+						<button type="submit" class="btn" id="btn" value="Sign In">Login</button>
+					</div>
+					<div class="reg">
+						<span class="psw">No Account? <a href="/users/signup">Register</a></span>
+					</div>
+				</form>
+			</div>
+		</div>
+		<%- include('../assets/js/bootstrap_javascript') %>
+	</body>
+</html>

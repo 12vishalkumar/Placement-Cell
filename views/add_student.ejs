@@ -1,0 +1,82 @@
+<!------------------------ Student Page ---------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+	<!---------------- head tag -------------------------->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<%- include('../assets/css/bootstrap_css') %>
+		<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ5s9mA2eqha2aalNvvqPRuJ2ikdJyvpBsjepxCrCqIfFsAaHtC1dI7Tb9pvQrm1DtiBA&usqp=CAU" type="image/x-icon">
+		<title>Create Student Form</title>
+	</head>
+	<!------------------------ body ---------------------->
+	<body style="background-color: #c9e4e4; ">
+		<%- include('_header') %>
+		<form
+			class="w-50 mx-auto mt-4"
+			action="/students/create-student"
+			method="post"
+			style="
+				height: 100%;
+				display: grid;
+				place-content: center;
+				background: rgb(137, 75, 173);
+				border-radius: 5px;
+				box-shadow: 1px 1px 3px 6px rgba(143, 141, 141, 0.4);
+				padding: 50px 70px;
+			"
+		>
+			<h3 style="text-align: center">Add Student</h3>
+			<fieldset>
+				<label for="batch">Batch</label>
+				<div class="mb-3">
+					<input type="text" class="form-control" id="batch" name="batch" placeholder="Enter Your Batch" required/>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="mb-3">
+					<label for="name" class="form-label">Name</label>
+					<input type="text" class="form-control" id="name" name="name" placeholder="Enter You Name" required />
+				</div>
+				<div class="mb-3">
+					<label for="email" class="form-label">Email</label>
+					<input type="email" class="form-control" id="email" placeholder="abc@gmail.com" name="email" required/>
+				</div>
+				<div class="mb-3">
+					<label for="contactNumber" class="form-label">Mobile Number</label>
+					<input type="text" class="form-control" id="contactNumber" name="contactNumber" placeholder="Enter Your Contact No." required/>
+				</div>
+				<div class="mb-3">
+					<label for="college" class="form-label">College Name</label>
+					<input type="text" class="form-control" id="college" name="college" placeholder="Enter Your College Name" />
+				</div>
+				<div class="mb-3">
+					<label for="placement" class="form-label">Placement Status</label>
+					<select class="form-select" aria-label="Default select example" name="placement" id="placement">
+						<option value="Placed">Placed</option>
+						<option value="Not Placed">Not Placed</option>
+					</select>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="mb-3" style="display: flex; justify-content: space-between">
+					<div class="mb-3 p-1">
+						<label for="dsa" class="form-label">DSA</label>
+						<input type="text" class="form-control" id="dsa" name="dsa" />
+					</div>
+					<div class="mb-3 p-1">
+						<label for="webd" class="form-label">WebDevlopment</label>
+						<input type="text" class="form-control" id="webd" name="webd" />
+					</div>
+					<div class="mb-3 p-1">
+						<label for="react" class="form-label">React</label>
+						<input type="text" class="form-control" id="react" name="react" />
+					</div>
+				</div>
+			</fieldset>
+			<button type="submit" class="btn btn-success align-self-center">Create Student</button>
+		</form>
+		<%- include('../assets/js/bootstrap_javascript') %>
+	</body>
+</html>
